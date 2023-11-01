@@ -26,7 +26,7 @@ public class TopTrumpsService {
         if (card1.getCardValue() > card2.getCardValue()) {
             return card1.getRank().name() + " of " + card1.getSuit().name() + " is the higher card.";
         } else if (card2.getCardValue() > card1.getCardValue()) {
-            return card2 + "is the higher card.";
+            return card2.getRank().name() + " of " + card2.getSuit().name() + " is the higher card.";
         } else {
             return "These cards are equal";
         }
